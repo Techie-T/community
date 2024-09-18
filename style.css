@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 46%, 92%);
+}
+
+.day-30 {
+  font-size: 14px;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 1px yellow;
+}
+
+.join-text {
+  color: hsl(218, 22%, 67%);
+  font-weight: 700;
+  opacity: 0.5;
+  font-size: 12px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.container {
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 1px rgb(201, 199, 199);
+  border-radius: 5px;
+  height: 400px;
+}
+
+.join {
+  padding: 28px 35px 28px 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+#title {
+  color: hsl(179, 62%, 43%);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.why-text {
+  width: 200px;
+  color: hsl(203, 13%, 88%);
+  line-height: 20px;
+  font-size: 13px;
+}
+.why-wrapper {
+  display: flex;
+  font-size: 14px;
+}
+
+.month-sub {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  width: 50%;
+  height: 231px;
+  border-bottom-left-radius: 5px;
+  padding-left: 30px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.673);
+  color: white;
+  width: 50%;
+  border-bottom-right-radius: 5px;
+  padding-left: 30px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.money {
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: white;
+}
+
+.money-p {
+  color: hsl(203, 13%, 88%);
+}
+
+.p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: hsl(218, 46%, 92%);
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  padding: 13px 80px 13px 80px;
+  box-shadow: 0px 0px 3px rgb(5, 137, 93);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+  background-color: lightcyan;
+  color: black;
+}
+
+button:active {
+  box-shadow: 0px 0px 5px black;
+}
+
+#footer {
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 674px;
+  }
+
+  body {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .why-wrapper {
+    flex-direction: column;
+  }
+  .join-text {
+    width: 200px;
+  }
+
+  .month-sub {
+    width: 300px;
+  }
+  .why-us {
+    width: 300px;
+  }
+
+  #footer {
+    margin-top: 70px;
+  }
+}
